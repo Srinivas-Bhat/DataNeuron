@@ -1,0 +1,104 @@
+body {
+  margin: 10px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  border: 2px solid orange;
+  padding: 10px;
+  grid-gap: 3px;
+  width: 98vw;
+  height: 90vh;
+  box-sizing: border-box;
+
+  grid-template-areas:
+    "nav nav head head head head"
+    "nav nav head head head head"
+    "main main main main main main";
+  overflow: auto;
+}
+
+nav {
+  grid-area: nav;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  overflow: auto;
+  resize: both;
+
+  min-width: 100px;
+  max-width: 50vw;
+  min-height: 100px;
+  height: 35vh;
+  padding: 5px;
+}
+
+header {
+  grid-area: head;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  overflow: auto;
+  resize: both;
+
+  min-height: 100px;
+  min-width: 200px;
+  max-width: 69vw;
+  height: 35vh;
+}
+
+#tableContainer {
+  border: 1px solid;
+  margin: 10px 5px;
+  width: 35vw;
+}
+
+input {
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #ea4c89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+button:hover,
+button:focus {
+  background-color: #e84583;
+}
+
+section {
+  grid-area: main;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  resize: both;
+  overflow: auto;
+  min-height: 100px;
+  min-width: 200px;
+  height: 50vh;
+  max-width: 98vw;
+}
+
